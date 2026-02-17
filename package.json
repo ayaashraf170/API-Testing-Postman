@@ -1,0 +1,16 @@
+{
+  "name": "api-testing-postman",
+  "version": "1.0.0",
+  "scripts": {
+    "start-server":"json-server --watch Students.json",
+    "test": "newman run \"chaining Students collection.postman_collection.json\" -e stage.postman_environment.json"
+    
+  
+  },
+
+  "dependencies": {
+    "json-server": "^1.0.0-beta.6",
+    "newman": "^6.2.2"
+  }
+}
+
